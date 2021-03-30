@@ -12,4 +12,5 @@ ENV LANG en_US.UTF-8
 RUN npm install @mapbox/node-pre-gyp -g
 RUN npm install && \
     npm run build
+RUN npm install -g npm@7.7.6
 CMD ["npm","start"]
